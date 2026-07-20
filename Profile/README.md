@@ -131,30 +131,6 @@ FreClean promotes environmentally responsible practices through:
 
 ---
 
-# Repository Structure
-
-```text
-.
-├── .github/
-├── assets/
-├── docs/
-├── formulas/
-├── legal/
-├── marketing/
-├── packaging/
-├── LICENSE
-├── README.md
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── SECURITY.md
-├── SUPPORT.md
-├── GOVERNANCE.md
-└── NOTICE
-```
-
----
-
 # Documentation
 
 The complete documentation is available in the **docs/** directory.

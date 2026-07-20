@@ -11,7 +11,6 @@
 Clean Spaces • Quality Products • Sustainable Impact
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/FreClean/freclean?style=social)]()
 
 </div>
 

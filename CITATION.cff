@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use FreClean in your work, please cite it using the metadata below."
+
+title: "FreClean"
+
+type: software
+
+authors:
+  - family-names: "Dubic"
+    given-names: "Johnny"
+
+abstract: >
+  FreClean is a professional initiative focused on high-quality cleaning
+  products, professional cleaning services, entrepreneurship, sustainability,
+  and community development. This repository contains official documentation,
+  governance, branding resources, policies, and supporting materials for the
+  FreClean project.
+
+keywords:
+  - cleaning
+  - cleaning services
+  - cleaning products
+  - hygiene
+  - sanitation
+  - sustainability
+  - entrepreneurship
+  - business
+  - community
+  - environment
+
+license: MIT
+
+version: "1.0.0"
+
+date-released: "2026-07-19"
+
+repository-code: "https://github.com/FreClean/freclean"
+
+url: "https://github.com/FreClean/freclean"
+
+language: en
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Dubic"
+      given-names: "Johnny"
+  title: "FreClean"
+  version: "1.0.0"
+  date-released: "2026-07-19"
+  repository-code: "https://github.com/FreClean/freclean"
+  license: MIT

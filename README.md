@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="assets/logo/logo.png" alt="FreClean Logo" width="180">
+<img src="FreClean.jpg" alt="FreClean Logo" width="180">
 
 # FreClean
 

@@ -1,0 +1,42 @@
+name: Feature Request
+description: Suggest an improvement or new capability for a FreClean repository
+labels: ["enhancement"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Which repository does this affect?
+      placeholder: e.g. freclean-admin
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the gap or friction this would address.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would you like to see happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you thought about.
+
+  - type: checkboxes
+    id: realism-check
+    attributes:
+      label: Realism check
+      description: FreClean's repositories follow a strict rule against overstating status — see freclean-docs/whitepaper/24-legal-policy-framework.md.
+      options:
+        - label: This request does not ask for a feature to be presented as live/available before it actually is.
+          required: true

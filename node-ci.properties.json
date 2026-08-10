@@ -1,0 +1,6 @@
+{
+  "name": "FreClean Node CI",
+  "description": "Standard typecheck/lint/test/build pipeline for any Node.js-based FreClean repository. Steps are skipped automatically if the corresponding npm script isn't defined.",
+  "iconName": "node-ci",
+  "categories": ["Continuous integration"]
+}

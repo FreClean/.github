@@ -1,0 +1,47 @@
+name: Docs Check (FreClean starter)
+
+# For documentation-only repos (e.g. freclean-operations, freclean-entrepreneurship,
+# freclean-brand) that have no build step but should still catch broken
+# internal links. Copy into the target repo's .github/workflows/ and adjust
+# paths as needed.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-markdown-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for broken relative links in Markdown files
+        shell: bash
+        run: |
+          set -e
+          status_file=$(mktemp)
+          echo 0 > "$status_file"
+
+          find . -name "*.md" -not -path "./node_modules/*" -print0 |
+          while IFS= read -r -d '' md_file; do
+            dir=$(dirname "$md_file")
+            grep -oE '\]\([^)]+\.md\)' "$md_file" | sed -E 's/\]\((.+)\)/\1/' |
+            while IFS= read -r link; do
+              case "$link" in
+                http*) continue ;;
+              esac
+              target="$dir/$link"
+              if [ ! -f "$target" ]; then
+                echo "❌ $md_file references missing file: $link"
+                echo 1 > "$status_file"
+              fi
+            done
+          done
+
+          result=$(cat "$status_file")
+          if [ "$result" -eq 1 ]; then
+            echo "One or more broken relative links found."
+            exit 1
+          fi
+          echo "✅ No broken relative markdown links found."

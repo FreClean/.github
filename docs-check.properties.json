@@ -1,0 +1,6 @@
+{
+  "name": "FreClean Docs Check",
+  "description": "Checks documentation-only FreClean repositories for broken relative Markdown links.",
+  "iconName": "docs-check",
+  "categories": ["Continuous integration"]
+}

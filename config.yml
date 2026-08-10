@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: mailto:freclean7@gmail.com
+    about: Do not open a public issue for a security vulnerability — email us directly. See SUPPORT.md.
+  - name: General question or support
+    url: mailto:freclean7@gmail.com
+    about: For anything that isn't a bug or feature request, see SUPPORT.md.

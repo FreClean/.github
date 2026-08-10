@@ -1,0 +1,32 @@
+name: Node CI (FreClean starter)
+
+# A starter workflow, offered to any freclean-* repo from the Actions tab
+# ("New workflow" -> "Organization workflows"). Copy into a repo's own
+# .github/workflows/ and adjust the steps that don't apply (e.g. drop `test`
+# for a repo with no test suite yet). This is a template to start from, not a
+# workflow that runs automatically anywhere by itself.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Typecheck (if configured)
+        run: npm run typecheck --if-present
+      - name: Lint (if configured)
+        run: npm run lint --if-present
+      - name: Test (if configured)
+        run: npm test --if-present
+      - name: Build (if configured)
+        run: npm run build --if-present

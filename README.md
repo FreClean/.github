@@ -2,6 +2,9 @@
 
 Professional cleaning services, cleaning & fragrance products, entrepreneurship, and Celo-powered Web3 payments — Léogâne, Ouest, Haiti.
 
+<img width="1536" height="1536" alt="freclean-logo-primary" src="https://github.com/user-attachments/assets/af07735f-6999-4dd6-bbcf-eea7096cff5f" />
+
+
 Founded by Johnny Dubic, April 16, 2025.
 
 ## Repositories

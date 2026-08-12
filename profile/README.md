@@ -1,4 +1,4 @@
-# FreClean
+# Welcome to FreClean Building cleaner communities through innovation, entrepreneurship, and technology
 
 Professional cleaning services, cleaning & fragrance products, entrepreneurship, and Celo-powered Web3 payments - Léogâne, Ouest, Haiti.
 

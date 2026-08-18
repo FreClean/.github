@@ -1,6 +1,8 @@
-# Welcome to FreClean Building cleaner communities through innovation, entrepreneurship, and technology
+# Welcome to FreClean
 
-Professional cleaning services, cleaning & fragrance products, entrepreneurship, and Celo-powered Web3 payments - Léogâne, Ouest, Haiti.
+Building cleaner communities through innovation, entrepreneurship, and technology.
+
+Professional cleaning services, cleaning & fragrance products, entrepreneurship, and Celo-powered Web3 payments in Léogâne, Ouest, Haiti.
 
 <img width="1536" height="1536" alt="freclean-logo-primary" src="https://github.com/user-attachments/assets/af07735f-6999-4dd6-bbcf-eea7096cff5f" />
 
@@ -24,11 +26,11 @@ Founded by Johnny Dubic, April 16, 2025.
 | [`freclean-security`](../freclean-security) | Org-wide security policy |
 | [`freclean-data`](../freclean-data) | Production database schema |
 | [`freclean-contracts`](../freclean-contracts) | B2B legal templates + Celo agreement registry |
-| `.github` | This repo — shared templates and community health files |
+| `.github` | This repo includes shared templates and community health files |
 
 ## The one rule across every repository
 
-A status is stated as current, in development, planned, or demo — never presented as more advanced than it actually is. See [`freclean-docs`](../freclean-docs)'s whitepaper for the full principle and FreClean's business/technical strategy.
+A status is stated as current, in development, planned, or demo, and it is never presented as more advanced than it actually is. See [`freclean-docs`](../freclean-docs)'s whitepaper for the full principle and FreClean's business/technical strategy.
 
 ## Contact
 

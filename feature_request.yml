@@ -36,7 +36,7 @@ body:
     id: realism-check
     attributes:
       label: Realism check
-      description: FreClean's repositories follow a strict rule against overstating status — see freclean-docs/whitepaper/24-legal-policy-framework.md.
+      description: FreClean's repositories follow a strict rule against overstating status. See freclean-docs/whitepaper/24-legal-policy-framework.md.
       options:
         - label: This request does not ask for a feature to be presented as live/available before it actually is.
           required: true

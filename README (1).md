@@ -1,6 +1,6 @@
 # .github
 
-FreClean's org-wide GitHub configuration: the organization profile page, issue/PR templates, contribution guidelines, code of conduct, support policy, and reusable starter workflows — all inherited by every `freclean-*` repository that doesn't define its own.
+FreClean's org-wide GitHub configuration covers the organization profile page, issue and PR templates, contribution guidelines, code of conduct, support policy, and reusable starter workflows. These defaults are inherited by every `freclean-*` repository that does not define its own.
 
 ## Contents
 
@@ -16,7 +16,7 @@ FreClean's org-wide GitHub configuration: the organization profile page, issue/P
 
 ## How GitHub uses this repo
 
-A `.github` repository at the organization level provides defaults automatically to every other repo in the org that doesn't define its own version of the same file — see [GitHub's documentation on `.github` repositories](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file-for-your-organization) for the mechanics. FreClean repos with their own `SECURITY.md` (e.g. `freclean-api`, `freclean-payment`, `freclean-dapp`) intentionally override this repo's org-wide security policy (`freclean-security`) with repo-specific detail — that's expected, not a duplication bug.
+A `.github` repository at the organization level provides defaults automatically to every other repo in the org that does not define its own version of the same file. See [GitHub's documentation on `.github` repositories](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file-for-your-organization) for the mechanics. FreClean repos with their own `SECURITY.md` (for example, `freclean-api`, `freclean-payment`, and `freclean-dapp`) intentionally override this repo's org-wide security policy (`freclean-security`) with repo-specific detail. That is expected, not a duplication bug.
 
 ## License
 

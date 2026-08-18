@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting a bug. If this is a **security vulnerability**, do not file it here — email freclean7@gmail.com instead (see SUPPORT.md).
+        Thanks for reporting a bug. If this is a **security vulnerability**, do not file it here. Email freclean7@gmail.com instead (see SUPPORT.md).
 
   - type: input
     id: repo

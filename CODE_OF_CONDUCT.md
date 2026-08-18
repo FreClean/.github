@@ -2,7 +2,7 @@
 
 ## Our standard
 
-FreClean's repositories are a professional space. Everyone interacting here — filing an issue, opening a PR, commenting on a discussion — is expected to communicate respectfully and in good faith.
+FreClean's repositories are a professional space. Everyone interacting here, whether filing an issue, opening a PR, or commenting on a discussion, is expected to communicate respectfully and in good faith.
 
 ## Expected behavior
 
@@ -23,7 +23,7 @@ Applies within all FreClean repositories (issues, PRs, discussions, code review)
 
 ## Enforcement
 
-Report unacceptable behavior to **freclean7@gmail.com**. Reports are reviewed and handled with discretion. Consequences may range from a warning to removal from the repository/organization, depending on severity — a specific enforcement ladder has not yet been formally published and will be added as needed.
+Report unacceptable behavior to **freclean7@gmail.com**. Reports are reviewed and handled with discretion. Consequences may range from a warning to removal from the repository or organization, depending on severity. A specific enforcement ladder has not yet been formally published and will be added as needed.
 
 ## Attribution
 

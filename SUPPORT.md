@@ -14,7 +14,7 @@ Open an issue in the specific repository, using the Feature Request template.
 
 ## I'm a customer with a question about a booking, order, or payment
 
-This is not the right place — contact FreClean directly:
+This is not the right place. Contact FreClean directly:
 
 - Email: freclean7@gmail.com
 - Phone: +1 (849) 388-1969
@@ -31,4 +31,4 @@ See `freclean-entrepreneurship`, or contact FreClean directly using the details 
 
 ## General questions about FreClean as a company
 
-See `freclean-docs` (the whitepaper) first — many questions are already answered there, including an FAQ section. Anything not covered: freclean7@gmail.com.
+See `freclean-docs` (the whitepaper) first. Many questions are already answered there, including an FAQ section. Anything not covered can be sent to freclean7@gmail.com.

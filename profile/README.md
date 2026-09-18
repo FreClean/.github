@@ -52,7 +52,7 @@ Dominican Republic, and the Caribbean.
 
 More than a cleaning company, FreClean is building an ecosystem that combines
 professional services, product manufacturing, entrepreneurship, digital
-payments, and sustainable development — proudly powered by the **CeloHT**
+payments, and sustainable development proudly powered by the **CeloHT**
 ecosystem.
 
 ## Repositories
@@ -77,7 +77,7 @@ FreClean accepts:
 
 - 💵 **Cash** and **bank transfer**
 - 💳 **Debit / Credit Cards** (Visa, Mastercard)
-- 🌐 **cUSD** and **CELO**, powered by the Celo blockchain via the CeloHT dApp, using **Valora Wallet**
+- 🌐 **USDm** and **CELO**, powered by the Celo blockchain via the CeloHT dApp, using **Valora Wallet**
 
 ## Contributing
 

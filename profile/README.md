@@ -66,10 +66,10 @@ ecosystem.
 
 ## Our Solutions
 
-- 🧹 **Cleaning Services** — residential, commercial, and specialized cleaning
-- 🧴 **Premium Products** — personal care, kitchen, laundry, floor, bathroom, and multi-purpose cleaning products
-- 💼 **Business Solutions** — manufacturing, wholesale distribution, franchise development, facility management
-- 🚀 **Entrepreneurship** — training, starter kits, mentorship, and distribution partnerships
+- 🧹 **Cleaning Services** - residential, commercial, and specialized cleaning
+- 🧴 **Premium Products** - personal care, kitchen, laundry, floor, bathroom, and multi-purpose cleaning products
+- 💼 **Business Solutions** - manufacturing, wholesale distribution, franchise development, facility management
+- 🚀 **Entrepreneurship** - training, starter kits, mentorship, and distribution partnerships
 
 ## Digital Payments
 

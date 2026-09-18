@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="assets/logo.jpg" alt="FreClean logo" width="180">
+  <img width="1536" height="1536" alt="freclean-logo" src="https://github.com/user-attachments/assets/d27250f3-6f2d-47ae-be8e-79d96d30fd53" />
+
 
   # FreClean
 

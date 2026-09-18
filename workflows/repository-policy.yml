@@ -1,0 +1,25 @@
+name: Repository policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject prohibited crypto asset references
+        run: |
+          if grep -RniE 'c[Uu][Ss][Dd]' --exclude-dir=.git .; then
+            echo 'Prohibited legacy crypto asset reference found.' >&2
+            exit 1
+          fi
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

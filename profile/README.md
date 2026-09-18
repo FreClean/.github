@@ -31,7 +31,7 @@
 
   
 
-![Payments](https://img.shields.io/badge/Payments-cUSD%20%7C%20CELO-blue.svg)
+![Payments](https://img.shields.io/badge/Payments-USDm%20%7C%20CELO-blue.svg)
 
 
   

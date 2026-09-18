@@ -59,7 +59,7 @@ ecosystem.
 
 | Repository | Purpose |
 |---|---|
-| [**freclean**](https://github.com/FreClean/FreClean) | Core — backend, API, database, business logic |
+| [**freclean**](https://github.com/FreClean/FreClean) | Core backend, API, database, business logic |
 | [**freclean-website**](https://github.com/FreClean/freclean-website) | Public marketing website |
 | [**freclean-app**](https://github.com/FreClean/freclean-app) | Customer / staff / admin application |
 | **`.github`** | Organization-wide templates, workflows, and policies |

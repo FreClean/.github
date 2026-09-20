@@ -73,11 +73,13 @@ ecosystem.
 
 ## Digital Payments
 
-FreClean accepts:
+FreClean accepts payment methods subject to market eligibility, provider approval, and jurisdictional compliance:
 
-- 💵 **Cash** and **bank transfer**
-- 💳 **Debit / Credit Cards** (Visa, Mastercard)
-- 🌐 **USDm** and **CELO**, powered by the Celo blockchain via the CeloHT dApp, using **Valora Wallet**
+- 💵 **Cash** for authorized in-person transactions
+- 💳 **Debit / Credit Cards** through an approved processor for eligible markets
+- 🌐 **Crypto** payment routes for supported jurisdictions and provider-approved chains, subject to server-side verification and fail-closed validation
+
+The final payment method availability depends on legal and operational approval in each country and transaction type.
 
 ## Contributing
 

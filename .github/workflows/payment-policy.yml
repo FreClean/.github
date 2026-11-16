@@ -1,0 +1,24 @@
+name: Payment policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  payment-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check public Markdown content
+        run: |
+          if git grep --line-number --ignore-case --word-regexp --extended-regexp \
+            '(visa|mastercard)' -- '*.md'; then
+            echo 'Prohibited payment-network brand reference found in Markdown content.' >&2
+            exit 1
+          fi

@@ -26,7 +26,7 @@ The following remain external actions until verified by qualified professionals:
 
 - legal review for jurisdiction-specific terms and consumer protection compliance
 - tax and VAT/GST treatment by registered advisors or providers
-- payment processor approval and webhook verification
+- independent review of payment verification and reconciliation controls
 - product compliance and safety review for regulated or physical goods
 - security audit and penetration testing by an independent team
 

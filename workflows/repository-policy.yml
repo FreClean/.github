@@ -15,6 +15,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Reject prohibited payment-network brands in text content
+        run: |
+          set +e
+          grep -RniIE '(^|[^[:alnum:]_])([v][i][s][a]|master[[:space:]-]?card)([^[:alnum:]_]|$)' \
+            --exclude-dir=.git \
+            --exclude-dir=node_modules \
+            --exclude-dir=vendor \
+            --exclude-dir=dist \
+            --exclude-dir=build \
+            .
+          result=$?
+          set -e
+          if [ "$result" -eq 0 ]; then
+            echo 'Prohibited payment-network brand reference found in text content.' >&2
+            exit 1
+          elif [ "$result" -ne 1 ]; then
+            echo 'Unable to scan repository text content.' >&2
+            exit "$result"
+          fi
+
       - name: Reject prohibited legacy crypto asset references
         run: |
           if grep -RniE 'c[Uu][Ss][Dd]' --exclude-dir=.git .; then

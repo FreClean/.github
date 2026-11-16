@@ -63,15 +63,15 @@ CeloHT is the official partner of FreClean.
 - 💼 **Business Solutions** - manufacturing, wholesale distribution, franchise development, facility management
 - 🚀 **Entrepreneurship** - training, starter kits, mentorship, and distribution partnerships
 
-## Digital Payments
+## Payment Routes
 
-FreClean accepts payment methods subject to market eligibility, provider approval, and jurisdictional compliance:
+FreClean's permitted payment routes are limited to:
 
-- 💵 **Cash** for authorized in-person transactions
-- 💸 **USDT / DAPP CELOHT** through an approved processor for eligible markets
-- 🌐 **Crypto** payment routes for supported jurisdictions and provider-approved chains, subject to server-side verification and fail-closed validation
+- **USDT** only on blockchain networks FreClean has explicitly verified and approved. Payments are confirmed manually; no network or wallet is advertised here before approval.
+- **CeloHT** as a separate route, offered only after FreClean confirms it is enabled.
+- **Cash** in person at authorized FreClean physical points of sale only; never online or remotely.
 
-The final payment method availability depends on legal and operational approval in each country and transaction type.
+No other payment route is offered, enabled, configured, or implied.
 
 ## Contributing
 

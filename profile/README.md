@@ -50,10 +50,6 @@ services, premium cleaning products, and innovative business solutions for
 homes, businesses, hotels, institutions, and communities across Haiti, the
 Dominican Republic, and the Caribbean.
 
-More than a cleaning company, FreClean is building an ecosystem that combines
-professional services, product manufacturing, entrepreneurship, digital
-payments, and sustainable development proudly powered by the **CeloHT**
-ecosystem.
 
 ## Repositories
 
@@ -76,7 +72,7 @@ ecosystem.
 FreClean accepts payment methods subject to market eligibility, provider approval, and jurisdictional compliance:
 
 - 💵 **Cash** for authorized in-person transactions
-- 💳 **Debit / Credit Cards** through an approved processor for eligible markets
+- 💸 **USDT / DAPP CELOHT** through an approved processor for eligible markets
 - 🌐 **Crypto** payment routes for supported jurisdictions and provider-approved chains, subject to server-side verification and fail-closed validation
 
 The final payment method availability depends on legal and operational approval in each country and transaction type.

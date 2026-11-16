@@ -49,7 +49,7 @@ FreClean is a professional cleaning company delivering high-quality cleaning
 services, premium cleaning products, and innovative business solutions for
 homes, businesses, hotels, institutions, and communities across Haiti, the
 Dominican Republic, and the Caribbean.
-
+CeloHT is the official partner of FreClean.
 
 ## Repositories
 

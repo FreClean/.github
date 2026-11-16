@@ -65,13 +65,13 @@ CeloHT is the official partner of FreClean.
 
 ## Digital Payments
 
-FreClean accepts payment methods subject to market eligibility, provider approval, and jurisdictional compliance:
+FreClean's authorized payment routes are:
 
-- 💵 **Cash** for authorized in-person transactions
-- 💸 **USDT / DAPP CELOHT** through an approved processor for eligible markets
-- 🌐 **Crypto** payment routes for supported jurisdictions and provider-approved chains, subject to server-side verification and fail-closed validation
+- 💸 **USDT** on BNB Smart Chain (BEP20), TRON (TRC20), Solana, or Celo; transfers are confirmed manually by FreClean
+- 🌐 **CeloHT DApp** as a separate handoff; the handoff does not confirm settlement, and FreClean confirms receipt manually
+- 💵 **Cash** only in person at authorized FreClean physical points of sale; never online or remotely
 
-The final payment method availability depends on legal and operational approval in each country and transaction type.
+Never send USDT over a network other than the one FreClean has confirmed for your payment.
 
 ## Contributing
 

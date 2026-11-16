@@ -47,11 +47,11 @@ Requirements:
 
 ## Payments
 
-There are exactly three payment methods: `CRYPTO`, `CARD`, and `CASH`.
-
-- Crypto assets are `CELO` and `USDm` and require server-side verification against chain state, recipient, amount, currency, and confirmations
-- Card payment status must come from processor verification and signed replay-protected webhook events
-- Cash can be recorded only by authorized staff and must include reconciliation and audit records
+- USDT is accepted only on networks FreClean has explicitly verified and approved; FreClean manually confirms the transfer before recording payment as received
+- CeloHT is a separate payment handoff and does not itself confirm settlement; FreClean manually confirms receipt
+- Cash is accepted only in person at authorized FreClean physical points of sale and is never offered online or remotely
+- Payment status must never be set from an automatic confirmation or a customer-submitted transaction reference
+- Cash records require authorized staff, the physical point-of-sale location, reconciliation, and an audit record
 - Client-side `paid`, totals, order state, or transaction status are never authoritative
 
 ## Configuration and deployment

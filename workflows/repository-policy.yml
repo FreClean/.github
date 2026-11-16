@@ -22,6 +22,14 @@ jobs:
             exit 1
           fi
 
+      - name: Reject payment-network brands in public Markdown content
+        run: |
+          if git grep --line-number --ignore-case --word-regexp --extended-regexp \
+            '(visa|mastercard)' -- '*.md'; then
+            echo 'Prohibited payment-network brand reference found in Markdown content.' >&2
+            exit 1
+          fi
+
       - name: Reject temporary or demo production content
         run: |
           if grep -RniE '(TODO|FIXME|example\.com|coming soon|temporarily|replace this|implement later|fake production|mock production|demo-only)' --exclude-dir=.git .; then

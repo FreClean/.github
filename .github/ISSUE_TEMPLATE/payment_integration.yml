@@ -1,0 +1,40 @@
+name: Payment or integration issue
+description: Report a non-sensitive issue with payment guidance or an integration.
+title: "[Payment/integration]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post transaction hashes, wallet addresses, customer or order details, credentials, private keys, or production logs. If this may expose a security issue, use the private process in [SECURITY.md](https://github.com/FreClean/.github/blob/main/SECURITY.md).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - FreClean Core USDT verification
+        - Website payment instructions
+        - CeloHT dApp handoff
+        - Other integration
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Affected repository
+      placeholder: FreClean, freclean-website, freclean-app, or .github
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Non-sensitive description
+      description: Describe the expected and observed behavior without payment identifiers or customer information.
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Safe reproduction or test context
+      description: Use test data and omit transaction references, wallet addresses, and credentials.
+    validations:
+      required: false

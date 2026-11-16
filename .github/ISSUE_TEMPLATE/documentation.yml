@@ -1,0 +1,25 @@
+name: Documentation issue
+description: Report inaccurate, missing, or unclear FreClean documentation.
+title: "[Docs]: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Repository and document
+      description: Identify the official repository and the document or page.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs attention?
+      description: Describe the inaccurate, missing, or unclear information.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: Separate verified facts from assumptions or pending work.
+    validations:
+      required: false

@@ -1,0 +1,40 @@
+name: Production incident
+description: Record a non-security production incident without exposing sensitive data.
+title: "[Incident]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, secrets, customer identities, personal data, private payment information, or unredacted logs. If the incident involves a security exposure, report it privately using [SECURITY.md](https://github.com/FreClean/.github/blob/main/SECURITY.md) instead of posting details here.
+  - type: input
+    id: service
+    attributes:
+      label: Affected service or repository
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Approximate time and time zone
+      description: Do not include customer-specific timestamps or identifying information.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Observed impact
+      description: Summarize impact without identifying customers or disclosing sensitive operational details.
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Actions taken and current status
+    validations:
+      required: false
+  - type: textarea
+    id: followup
+    attributes:
+      label: Follow-up needed
+    validations:
+      required: false

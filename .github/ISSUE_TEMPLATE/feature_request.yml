@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest a focused improvement to a FreClean repository.
+title: "[Feature]: "
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Target repository
+      placeholder: FreClean, freclean-website, freclean-app, or .github
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the need and who is affected.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Describe the outcome you would like without including secrets or private customer information.
+    validations:
+      required: true
+  - type: textarea
+    id: considerations
+    attributes:
+      label: Additional considerations
+      description: Note relevant accessibility, security, payment, data, or deployment implications.
+    validations:
+      required: false

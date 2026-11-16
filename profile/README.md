@@ -93,7 +93,7 @@ community members. Please review:
 ## Contact
 
 - 🌐 [www.freclean.com](https://www.freclean.com)
-- ✉️ [contact@freclean.com][freclean7@gmail.com](mailto:freclean7@gmail.com)
+- ✉️ [contact@freclean.com / freclean7@gmail.com](mailto:freclean7@gmail.com)
 - 📘 [Facebook](https://www.facebook.com/profile.php?id=61572058283204)
 
 ---

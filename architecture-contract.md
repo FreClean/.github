@@ -47,12 +47,24 @@ Requirements:
 
 ## Payments
 
-There are exactly three payment methods: `CRYPTO`, `CARD`, and `CASH`.
+FreClean Core implements USDT payment verification on BNB Smart Chain, TRON,
+Solana, and Celo. It also exposes a separate `CELOHT_DAPP` handoff; that
+handoff is not USDT and has no server-side settlement verifier. A handoff
+remains pending until a settlement integration is implemented.
 
-- Crypto assets are `CELO` and `USDm` and require server-side verification against chain state, recipient, amount, currency, and confirmations
-- Card payment status must come from processor verification and signed replay-protected webhook events
-- Cash can be recorded only by authorized staff and must include reconciliation and audit records
-- Client-side `paid`, totals, order state, or transaction status are never authoritative
+- Core's USDT verification code is not proof that production payments are
+  enabled. The production RPC, token, receiving-address, and wallet-ownership
+  configuration must be independently verified before enabling payments.
+- USDT payment confirmation must be based on server-side verification of the
+  selected network, transaction hash, recipient, asset, amount, transaction
+  status, and required confirmations/finality.
+- A button click, redirect, client-supplied status, or transaction hash alone
+  never confirms payment.
+- The public website currently provides manual USDT instructions, not a
+  complete authenticated checkout. Online card checkout and a Core cash
+  payment route are not implemented.
+- Client-side `paid`, totals, order state, or transaction status are never
+  authoritative.
 
 ## Configuration and deployment
 

@@ -1,104 +1,127 @@
-<div align="center">
-  <img width="1672" height="941" alt="file_000000006e6481f5ad01e503c55c2326" src="https://github.com/user-attachments/assets/7e646cb0-b2b3-4cd2-b0db-3412f734ec33" />
+# FreClean
 
+Professional cleaning services, cleaning products, fragrance solutions,
+entrepreneurship, and digital commerce.
 
-
-  # FreClean
-
-  ### Professional Cleaning Solutions • Premium Cleaning Products • Sustainable Innovation
-
-  Building Cleaner Spaces • Empowering Entrepreneurs • Creating Better Communities
-
-  
-
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-
-
-  
-
-![Status](https://img.shields.io/badge/Status-Active-success.svg)
-
-
-  
-
-![Industry](https://img.shields.io/badge/Industry-Cleaning-brightgreen.svg)
-
-
-  
-
-![Web3](https://img.shields.io/badge/Web3-Celo-yellow.svg)
-
-
-  
-
-![Payments](https://img.shields.io/badge/Payments-USDm%20%7C%20CELO-blue.svg)
-
-
-  
-
-![Powered By](https://img.shields.io/badge/Powered%20by-CeloHT-orange.svg)
-
-
-</div>
-
----
+**Founded in Haiti. Rooted in Léogâne, Ouest. Building toward the Caribbean.**
 
 ## About FreClean
 
-FreClean is a professional cleaning company delivering high-quality cleaning
-services, premium cleaning products, and innovative business solutions for
-homes, businesses, hotels, institutions, and communities across Haiti, the
-Dominican Republic, and the Caribbean.
+FreClean is a Haitian cleaning and consumer-products business founded by
+Johnny Dubic on April 16, 2025. The business focuses on professional cleaning
+services, locally developed products, fragrance and scented products,
+hospitality and commercial solutions, and practical entrepreneurship
+opportunities.
 
-More than a cleaning company, FreClean is building an ecosystem that combines
-professional services, product manufacturing, entrepreneurship, digital
-payments, and sustainable development proudly powered by the **CeloHT**
-ecosystem.
+## What We Do
 
-## Repositories
+- Residential cleaning
+- Commercial cleaning
+- Hospitality and Airbnb cleaning
+- Specialized cleaning
+- Cleaning products
+- Fragrance and scented products
+- Entrepreneurship and business opportunities
 
-| Repository | Purpose |
-|---|---|
-| [**freclean**](https://github.com/FreClean/FreClean) | Core backend, API, database, business logic |
-| [**freclean-website**](https://github.com/FreClean/freclean-website) | Public marketing website |
-| [**freclean-app**](https://github.com/FreClean/freclean-app) | Customer / staff / admin application |
-| **`.github`** | Organization-wide templates, workflows, and policies |
+## Official CeloHT Partnership
 
-## Our Solutions
+**Official CeloHT Partner**
 
-- 🧹 **Cleaning Services** - residential, commercial, and specialized cleaning
-- 🧴 **Premium Products** - personal care, kitchen, laundry, floor, bathroom, and multi-purpose cleaning products
-- 💼 **Business Solutions** - manufacturing, wholesale distribution, franchise development, facility management
-- 🚀 **Entrepreneurship** - training, starter kits, mentorship, and distribution partnerships
+FreClean is an official CeloHT partner.
+
+FreClean is an independent Haitian cleaning and consumer-products business and
+an official CeloHT partner. The organizations remain independent while
+collaborating on relevant digital-payment, entrepreneurship, technology, and
+community-impact initiatives. CeloHT does not own or control FreClean, and
+FreClean does not own or control CeloHT.
+
+- [CeloHT website](https://celoht.com/)
+- [CeloHT GitHub organization](https://github.com/Celo-HaiTi/CeloHT)
+- [CeloHT dApp](https://app.celoht.com/)
 
 ## Digital Payments
 
-FreClean accepts payment methods subject to market eligibility, provider approval, and jurisdictional compliance:
+FreClean's public website currently displays manual USDT payment instructions
+for supported networks, including Celo. This is not an authenticated online
+checkout, and a button click, dApp redirect, or customer-submitted transaction
+hash does not confirm payment.
 
-- 💵 **Cash** for authorized in-person transactions
-- 💳 **Debit / Credit Cards** through an approved processor for eligible markets
-- 🌐 **Crypto** payment routes for supported jurisdictions and provider-approved chains, subject to server-side verification and fail-closed validation
+FreClean Core contains server-side USDT verification for its supported
+networks. The Core payment documentation requires production RPC, token,
+receiving-address, and wallet-ownership checks before enabling automated
+payments. The live production configuration is not available in this
+organization repository, and the website does not yet implement the complete
+checkout flow.
 
-The final payment method availability depends on legal and operational approval in each country and transaction type.
+The CeloHT dApp handoff is a separate payment route, not a USDT payment
+rail. Core has no CeloHT settlement callback or verifier, so a handoff remains
+pending until a server-side settlement integration is implemented. The
+current public CeloHT dApp repository documents a Celo Sepolia testnet pilot;
+it does not establish a production USDT route for FreClean.
 
-## Contributing
+When Core verifies a supported USDT payment, confirmation must come from the
+server after checking the selected network, transaction hash, recipient,
+asset, amount, transaction status, and required confirmations. A hash alone is
+not proof of payment.
 
-We welcome contributions from developers, designers, entrepreneurs, and
-community members. Please review:
+Traditional payment arrangements may include cash for eligible transactions
+and card arrangements where available; confirm availability directly with
+FreClean. Online card checkout is not confirmed.
 
-- [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md)
-- [SECURITY.md](../SECURITY.md)
+FreClean does not issue its own cryptocurrency or native token.
+
+## Technology
+
+| Repository | Purpose |
+|---|---|
+| [FreClean](https://github.com/FreClean/FreClean) | Canonical Core backend, API, database, and business logic |
+| [freclean-website](https://github.com/FreClean/freclean-website) | Official public website |
+| [freclean-app](https://github.com/FreClean/freclean-app) | Customer, staff, and admin application |
+| [.github](https://github.com/FreClean/.github) | Organization policies, templates, workflows, security configuration, and public documentation |
+
+The architecture is **Core API → App → Website → CI/CD**. Core owns business
+rules, data writes, authorization, and authoritative payment states.
+
+## Security
+
+FreClean's engineering standards include:
+
+- Server-side authorization and role-based access control (RBAC)
+- Secure authentication and secret management
+- Server-side payment verification and fail-closed validation
+- Production configuration validation
+- Protected CI/CD workflows
+- Responsible vulnerability disclosure
+
+Never publish private keys, wallet credentials, API keys, database credentials,
+JWT secrets, or production environment variables.
+
+## Transparency
+
+FreClean does not present unverified revenue, user counts, transaction
+volumes, impact statistics, testimonials, certifications, or partnerships as
+facts. Plans and pending work should be distinguished from verified current
+capabilities.
+
+## Legal & Business Development
+
+FreClean is continuing to formalize its legal, tax, regulatory, banking,
+insurance, and contractual infrastructure as the business grows. This does
+not represent a claim that any pending registration or approval is complete.
+
+## Location
+
+- Founded in Haiti.
+- Rooted in Léogâne, Ouest.
+- Building toward the Caribbean.
 
 ## Contact
 
-- 🌐 [www.freclean.com](https://www.freclean.com)
-- ✉️ [freclean7@gmail.com](mailto:freclean7@gmail.com)
-- 📘 [Facebook](https://www.facebook.com/profile.php?id=61572058283204)
+- Website: [freclean.com](https://freclean.com/)
+- Email: [freclean7@gmail.com](mailto:freclean7@gmail.com)
+- GitHub: [FreClean](https://github.com/FreClean)
+- Phone: [+50946128022](tel:+50946128022)
+- Founder: Johnny Dubic
 
----
-
-<div align="center">
-  <b>Clean Today. Sustain Tomorrow.</b><br>
-  © 2026 FreClean. All rights reserved.
-</div>
+For contribution guidance, see [CONTRIBUTING.md](../CONTRIBUTING.md),
+[CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md), and [SECURITY.md](../SECURITY.md).

@@ -1,0 +1,57 @@
+name: Repository policy
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Reject prohibited legacy crypto asset references
+        run: |
+          if grep -RniE 'c[Uu][Ss][Dd]' --exclude-dir=.git .; then
+            echo 'Prohibited legacy crypto asset reference found.' >&2
+            exit 1
+          fi
+
+      - name: Reject temporary or demo production content
+        run: |
+          if grep -RniE '(TODO|FIXME|example\.com|coming soon|temporarily|replace this|implement later|fake production|mock production|demo-only)' --exclude-dir=.git --exclude='repository-policy.yml' .; then
+            echo 'Temporary or demo production content found.' >&2
+            exit 1
+          fi
+
+      - name: Secret scan
+        shell: bash
+        run: |
+          version=8.30.1
+          archive="gitleaks_${version}_linux_x64.tar.gz"
+          curl --fail --silent --show-error --location \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${version}/${archive}" \
+            --output "${RUNNER_TEMP}/${archive}"
+          curl --fail --silent --show-error --location \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${version}/gitleaks_${version}_checksums.txt" \
+            --output "${RUNNER_TEMP}/gitleaks_checksums.txt"
+          (
+            cd "${RUNNER_TEMP}"
+            grep "  ${archive}$" gitleaks_checksums.txt | sha256sum --check --status
+          )
+          tar -xzf "${RUNNER_TEMP}/${archive}" -C "${RUNNER_TEMP}" gitleaks
+          "${RUNNER_TEMP}/gitleaks" git --redact --no-banner .
+
+      - name: Repository architecture gate
+        run: |
+          if ! grep -Rni 'FreClean/FreClean\|FreClean/freclean-app\|FreClean/freclean-website\|FreClean/.github' README.md architecture-contract.md profile/README.md >/dev/null; then
+            echo 'Architecture contract mismatch detected.' >&2
+            exit 1
+          fi

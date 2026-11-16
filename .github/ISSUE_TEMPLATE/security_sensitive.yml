@@ -1,0 +1,22 @@
+name: Security-sensitive coordination
+description: For non-sensitive follow-up only; report vulnerability details privately.
+title: "[Security coordination]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not post vulnerability details, exploit steps, credentials, tokens, private keys, customer data, or unredacted logs here.** Read [SECURITY.md](https://github.com/FreClean/.github/blob/main/SECURITY.md) and report the concern privately first. Public issues are visible to everyone.
+  - type: checkboxes
+    id: private_report
+    attributes:
+      label: Before opening this public issue
+      options:
+        - label: I have reported the security concern privately, and this issue contains no sensitive details.
+          required: true
+  - type: textarea
+    id: coordination
+    attributes:
+      label: Non-sensitive coordination note
+      description: Optional. Do not describe the vulnerability or disclose sensitive evidence.
+    validations:
+      required: false
